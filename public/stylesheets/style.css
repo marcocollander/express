@@ -3,6 +3,25 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+.menu {
+  border: 1px solid brown;
+}
+
+.menu__list {
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+
+}
+
+.menu__link {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+.menu__link--active {
+  color: magenta;
 }

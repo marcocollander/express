@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET home page. */
+/* GET quiz page. */
 router.get('/', (req, res) => {
   const url = req.url;
-  res.render('index', { title: 'Express' });
+  res.render('admin', { title: 'Admin' });
 });
 
 module.exports = router;
-
