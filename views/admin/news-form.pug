@@ -1,0 +1,21 @@
+extends  ../layout
+
+block content
+	h1= title
+
+	if errors.errors !== undefined
+		each message in errors.errors
+			p=message
+
+	form(method='post')
+		p
+			label Tytuł:    
+				input(type='text' name='title')
+		p 
+			label Wpis:     
+		div 
+			textarea(name='description' cols='60' rows='15')
+		p 
+			input(type='submit' value='Zapisz') 
+
+
