@@ -10,11 +10,11 @@ block content
 	form(method='post')
 		p
 			label Tytuł:    
-				input(type='text' name='title')
+				input(type='text' name='title' value=body.title || '')
 		p 
 			label Wpis:     
 		div 
-			textarea(name='description' cols='60' rows='15')
+			textarea(name='description' cols='60' rows='15')=body.description || ''
 		p 
 			input(type='submit' value='Zapisz') 
 
